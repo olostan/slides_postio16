@@ -1,0 +1,146 @@
+@import url(font/roboto.css);
+
+#title {
+    font-size: 80px;
+}
+
+#title: up(800);
+
+.s1 {
+    #title: down(800) show;
+}
+
+#gcp: down(500);
+.s2 {
+    #title: up(250);
+    #gcp: show up(400);
+}
+#gcp_nl, #gcp_nr {
+    font-size: 150px;
+}
+#gcp_nl: left(520);
+
+#gcp_nr: right(520);
+
+.s3 {
+    #title: up(250);
+    #gcp: up(400) scale(0.3,0.3);
+    #gcp_nl: show right(300);
+    #gcp_nr: show left(300);
+    #bg {
+        background-image: url(assets/better.jpg);
+    }
+
+}
+#bg,#bg2 { width: 100%; height: 100%; background-size: contain;transition: all 0.7s ease-in;::hide;position:absolute;}
+.s4 {
+    #gcp_nl: show up(350) right(50) scale(0.3,0.8);
+    #gcp_nr: show up(350) left(50) scale(0.3,0.8);
+    #gcp: up(40);
+    #bg: show scale(1.2,1.2) up(20);
+    #bg2 {
+        background-image: url(assets/scav.jpg);
+    }
+
+}
+#bg2: right(200);
+.s5 {
+    #bg: hide;
+    #bg2: show left(200);
+}
+.s6 {
+    #bg2: hide;
+    #scav_scr:show scale(0.5,0.5);
+}
+#scav_arch: right(200) scale(0.5,0.5);
+
+.s7 {
+    #scav_scr:left(400) hide;
+    #scav_arch: left(200) show;
+
+    #gcp_nl: opacity(0.5);
+    #gcp_nr: opacity(0.5);
+    #gcp: opacity(0.5);
+
+}
+
+#scav_src: down(400) scale(0.8,0.8);
+.s8 {
+    #scav_arch: up(400) delay(0.2) hide;
+    #scav_src: up(400) show ;
+}
+#racoon: right(400) scale(0.5,0.5);
+.s9 {
+    #scav_src: left(400) hide delay(0.2);
+    #racoon: left(400) show;
+}
+#racoon_l: right(400);
+.s10 {
+    #racoon: left(200) delay(0.2);
+    #racoon_l: left(200) show;
+}
+#stack_drv: up(300) scale(0.4,0.4);
+
+.s11 {
+    #racoon: rotate(60) down(500) delay(0) hide;
+    #racoon_l: rotate(60) down(500) delay(0.2) hide;
+    #stack_drv: down(300) show;
+}
+#stack_drv_d: rotate(-40) up(300) scale(0.3,0.3);
+.s12 {
+    #stack_drv: down(400) rotate(40) hide;
+    #stack_drv_d: show down(300) rotate(40);
+}
+.s13 {
+    #stack_drv_d: scale(0.8,0.8) up(200) right(1200);
+}
+.s14 {
+    #stack_drv_d: left(1200) scale(-0.4,-0.4) down(50);
+}
+.s15 {
+    #stack_drv_d: left(1000) scale(0.3,0.3);
+}
+#firebase: scale(0.3,0.3) right(700);
+.s16 {
+    #stack_drv_d: scale(-0.6,-0.6) left(500) hide;
+    #firebase: show scale(0.5,0.5) left(700);
+}
+#firebase_con: down(700) scale(0.45,0.45);
+
+.s17 {
+    #firebase: up(200) scale(-0.1,-0.1);
+    #firebase_con: up(400) show;
+}
+.s18 {
+    #firebase: up(180) scale(-0.3,-0.3) delay(0.1);
+    #firebase_con: up(280) ;
+}
+#angular: down(400);
+
+.s19 {
+    #firebase: up(180) hide delay(0.3);
+    #firebase_con: up(280) hide delay(0.3);
+    #gcp_nl: opacity(0);
+    #gcp_nr: opacity(0);
+    #gcp: opacity(0);
+
+    #angular: show up(400);
+}
+#angular_mob: down(300) scale(0.4,0.4);
+
+.s20 {
+    #angular: up(300) delay(0.3);
+    #angular_mob: show up(300);
+}
+#angular_r: rotate(-90) scale(0.6,0.6);
+
+.s21 {
+    #angular: up(50) opacity(0.4);
+    #angular_mob: rotate(90) hide;
+    #angular_r: rotate(90) show  delay(0.4);
+}
+.s22 {
+    #angular: up(150) hide;
+    #angular_mob: up(400) hide;
+    #angular_r: up(400) hide;
+}
