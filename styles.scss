@@ -138,10 +138,25 @@
     #angular{ opacity:0.4;transform:translateY(-350px);}
     #angular_mob{ opacity:0;transform:translateY(0px) rotateX(90deg) scaleX(0.4) scaleY(0.4);}
     #angular_r{ opacity:1;transform:rotateX(0deg) scaleX(0.6) scaleY(0.6);transition-delay: 0.4s;}
+    #bg {
+        background-image: url(assets/IMG_2481.JPG);
+        background-repeat: no-repeat;
+        background-position: center;
+        filter: blur(5px);
+    }
 }
 .s22 {
     #angular{ opacity:0;transform:translateY(-500px);}
     #angular_mob{ transform:translateY(-400px) rotateX(90deg) scaleX(0.4) scaleY(0.4);}
     #angular_r{ opacity:0;transform:translateY(-400px) rotateX(0deg) scaleX(0.6) scaleY(0.6);}
+    #bg {
+        opacity:1;
+    }
+}
+.s23 {
     #title{ transform:translateY(0px);}
+
+    #bg {
+        -webkit-filter: blur(10px);
+    }
 }
